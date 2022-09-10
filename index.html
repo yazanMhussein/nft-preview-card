@@ -2,17 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | NFT preview card component</title> -->
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  <title>Frontend Mentor | NFT preview card component</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -20,37 +14,43 @@
 <body>
 
 <main class="mainBody">
-  <!-- <div class="img_container">
-    <img src="./img/image-equilibrium.jpg" alt="NFT image">
-    <div class="hover_efect">
-        <img src="./img/icon-view.svg" alt="hover icon">
-    </div>
-</div> -->
 
-  <img src="./images/image-equilibrium.jpg" alt="nftImg" class="nftImg">
-
+  <div class="item">
+    <a class="hover-effect" data-overlay="rgba(52,58,64,.6)" target="_blank" rel="noreferrer">
+      <span class="hover-effect-container">
+        <span class="hover-effect-icon ">
+          <span class="top-icon">
+            <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+          </span>
+        </span>
+      </span>
+      <div class="p-2">
+        <div >
+          <img src="./images/image-equilibrium.jpg" alt="nftImg" class="nftImg">      
+        </div>
+      </div>
+    </a>
+  </div>
 
   <h1 class="textHeader">Equilibrium #3429</h1>
 
- <p class="textColor"> Our Equilibrium collection promotes balance and calm.</p>
- <section class="inlineNumber">
-<img src="./images/icon-ethereum.svg" alt="eth amount" class="amount" >
-<p class="ethColor"> 0.041 ETH </p></img>
-<img src="./images/icon-clock.svg" alt="clock" class="clock">
-<p class="clockColor"> 3 days left </p></img>
-</section>
+  <p class="textColor"> Our Equilibrium collection promotes balance and calm.</p>
 
-<hr class="lineColor">
+  <section class="inlineNumber">
+    <img src="./images/icon-ethereum.svg" alt="eth amount" class="amount" >
+    <p class="ethColor"> 0.041 ETH </p></img>
+    <img src="./images/icon-clock.svg" alt="clock" class="clock">
+    <p class="clockColor"> 3 days left </p></img>
+  </section>
 
-<section class="inlineProfileInfo">
-<img src="./images/image-avatar.png" alt="profit img" class="iconImg"></img>  
-<p class="textColor">  Creation of <span class="name"> Jules Wyvern </span> </p>
-</section>
+  <hr class="lineColor">
+
+  <section class="inlineProfileInfo">
+  <img src="./images/image-avatar.png" alt="profit img" class="iconImg"></img>  
+  <p class="textColor">  Creation of <span class="name"> Jules Wyvern </span> </p>
+  </section>
 
 </main>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+
 </body>
 </html>
