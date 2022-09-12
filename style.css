@@ -81,6 +81,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     border-radius:15px;
+    background-position:center;
     background-color:hsl(178, 100%, 50%);
     opacity: 0.2;
     cursor:pointer;
