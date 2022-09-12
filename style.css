@@ -55,47 +55,74 @@ body{
     display: flex;
     flex-direction: column;
     border-radius: 2%;
-    
-    
-    
     width: 350px;
     background-color:  hsl(216, 50%, 16%);
     font-family: 'Outfit', sans-serif;
 }
 
-.nftImg{
-    padding:  5%;
-    border-radius: 10%;
-    min-height: 60%;
-    min-width: 90%;
-    
-
-    }
-.nftImg:hover{
-    margin: auto;
-    width: 90%;
-    height: 60%;
-    /* transition: opacity 0.4s; */
-    background-image: url(./images/icon-view.svg);
-    /* content: url(./images/icon-view.svg); */
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius:15px;
-    background-color:hsl(178, 100%, 50%);
-    opacity: 0.2;
-    cursor:pointer;
-    /* mix-blend-mode: overlay; */
-    /* backface-visibility:visible; */
-    z-index: 1;
+.item {
+    overflow: hidden;
+    position: relative;
+    padding: 1rem;
 }
 
+.hover-effect {
+    display: block; 
+    overflow: hidden;
+    position: relative;
+    border-radius: .7rem;
+    cursor: pointer;
+}
+
+.hover-effect::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.hover-effect-container {
+    position: absolute;
+    left: 50%;
+    top: -1.25rem;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    transition: .4s;
+}
+
+.hover-effect-icon {
+    color: #fff;
+    display: inline-block;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.nftImg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.hover-effect:hover .hover-effect-container {
+    top: 50%;
+}
+  
+.hover-effect:hover::before {
+    background-color:hsl(178, 100%, 50%);
+    opacity: 0.2;
+}
+  
 .textHeader{
     font-weight: 600;
     font-size:24px;
     color: hsl(0, 0%, 100%);
     margin: 2% 2% 2% 5%;}
 .textHeader:hover{
-    color:hsl(178, 100%, 50%);}
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 .textColor{
     font-size: 18px;
     color:hsl(215, 51%, 70%);
@@ -143,7 +170,8 @@ body{
     font-weight: 400;
     color:hsl(0, 0%, 100%);
 }
-.name:hover{color:hsl(178, 100%, 50%);}
+.name:hover{color:hsl(178, 100%, 50%);
+cursor: pointer;}
 /* 
 .kp{
 
